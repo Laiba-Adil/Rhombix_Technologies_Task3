@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header #logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #373535, #feb47b);
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header input {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#book-list {
+    width: 60%;
+}
+
+#borrow-history {
+    width: 30%;
+}
+
+.book-item {
+    background-color: #e3f2fd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.book-item img {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.book-item h3 {
+    margin: 0;
+    color: #333;
+}
+
+.book-item p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.book-item button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-item button:hover {
+    background-color: #45a049;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#history-list li span {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+#history-list li span.borrowed {
+    background-color: #ff9800;
+}
+
+#history-list li span.returned {
+    background-color: #8bc34a;
+}
